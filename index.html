@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation rotate</title>
+    <style>
+.two{
+    background-color: rgb(255, 0, 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 25px solid white;
+    border-top: 20px solid rgb(0, 25, 185);
+    animation: me 2.5s linear infinite;
+    margin-left: 225px;
+    margin-top: 20px;
+}
+@keyframes me{
+    to{ transform: rotate(360deg); }
+}
+.three{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 25px solid rgb(17, 28, 187);
+    border-top: 20px solid rgb(111, 255, 0);
+    animation: mor 2.5s linear infinite;
+    margin-left: 225px;
+    margin-top: 20px;
+}
+@keyframes mor{
+    to{ transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body>
+    <div class="two"></div>
+
+    <div class="three"></div>
+</body>
+</html>
